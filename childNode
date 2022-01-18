@@ -1,0 +1,29 @@
+.childElementCout 					* get number of element only
+.children.length					* get number of element only
+.children						* get All element in the pairnt
+.children[0]						* the first element in the pairnt
+.children[0].textContent				* the text in the element in the pairnt
+-----------------------------------------------------------------------------
+[ childNodes ] 
+=============================================
+
+.childNodes.length					* count all elements and text and comments in the pairnt
+.childNodes						* get all the elements and text and comments in the pairnt
+
+-------------------------------
+
+.firstChild						* the first node in the pairnt		.childNodes[0] = .firstChild
+.lastChild						* the last node in the pairnt
+.firstElementChild					* the first element in the pairnt
+.lastElementChild					* the last element in the pairnt
+
+---------------------------------
+
+.childNodes[2].nodeName				* the name of node in the pairnt
+.childNodes[2].tagName					* the name of element only in the pairnt
+.childNodes[2].nodeValue				* the value of the node
+.childNodes[2].firstChild.nodeValue			* the value node in the firstChild
+
+----------------------------------
+
+

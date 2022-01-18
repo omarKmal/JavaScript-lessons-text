@@ -1,0 +1,166 @@
+-----------------------------------------------------------------------
+			// Lesson [1] //
+-----------------------------------------------------------------------
+window
+= window object is the browser window
+= window object supported by all browsers
+= window object has propertise & methouds not supported in all browsers
+= window is the default object of browser
+= all global js objects are members of window object
+-----------------------------------------------------------------------
+			// Lesson [2] //
+-----------------------------------------------------------------------
+ 	Say about window
+-----------------------------------------------------------------------
+			// Lesson [3] //
+-----------------------------------------------------------------------
+var ask = confirm("Are you sure you want to open google?");
+
+if (ask === true){
+    location.href = "https://www.google.com";
+}else{
+    console.log("Sorry you choosed not to open google");
+}
+
+// prompt(text,example); // alert() // confirm
+
+-----------------------------------------------------------------------
+			// Lesson [4] //
+-----------------------------------------------------------------------
+/*
+    setTimeout(function , millsecounds , param1, param2, parma3)
+    clearTimeout(Id or number of setTimeout)
+*/
+
+var myButton = document.getElementById("main");
+
+function writeMessage(){
+    console.log("Hello After 3 secound");
+};
+
+var myTime = setTimeout(writeMessage , 3000);
+
+myButton.onclick = function (){
+    clearTimeout(myTime);
+}
+-----------------------------------------------------------------------
+			// Lesson [5] //
+-----------------------------------------------------------------------
+var myDiv = document.getElementById("show");
+
+function countDown(){
+    if (myDiv.textContent <= 0 ){
+        myDiv.textContent = "Done...";
+        clearInterval(myTime);
+    }else{
+        myDiv.textContent -= 1;
+    }
+}
+var myTime = setInterval(countDown , 1000);
+----------------------------------------------------------------------
+			// Lesson [6] //
+-----------------------------------------------------------------------
+/*
+    Syntax: window.open(url , name or attribute, specification, history replace)
+    spec:
+    -width = pixels [only number with out px]
+*/
+
+document.getElementById("open").onclick = function (){
+    open("https://www.google.com","_blank","width=300,height=300,top=300,left=300,menubar=yes,statusbar=yes","true");
+}
+-----------------------------------------------------------------------
+			// Lesson [7] //
+-----------------------------------------------------------------------
+/*
+    scrollBy(x,y) // numbers only in pixels
+    scrollTo(x,y) // numbers only in pixels
+*/
+
+document.getElementById("scroll").onclick = function(){
+    scrollBy(500,250);
+    console.log("Window scrolled Left " + scrollX);
+    console.log("Window scrolled Top " + scrollY);
+}
+-----------------------------------------------------------------------
+			// Lesson [8] //
+-----------------------------------------------------------------------
+// stop()
+//close()
+//focus()
+-----------------------------------------------------------------------
+			// Lesson [9] //
+-----------------------------------------------------------------------
+innerHeight; // outerHeight; innerWidth; outerWidth;
+-----------------------------------------------------------------------
+			// Lesson [10] //
+-----------------------------------------------------------------------
+pageXoffset or scrollX	// pageYoffSet or scrollY
+-----------------------------------------------------------------------
+			// Lesson [11] //
+-----------------------------------------------------------------------
+location
+-Absolute url
+-page within the current web page
+-hash id with in the page
+-protocol [ FTP , Mail , File ]
+-----------------------------------------------------------------------
+			// Lesson [12] //
+-----------------------------------------------------------------------if (window.location.hash.indexOf("chat") > -1){
+    console.log("You are comming from chat hash")
+}
+
+-----------------------------------------------------------------------
+			// Lesson [13] //
+----------------------------------------------------------------------- location.pathname
+  location.hostname
+  location.search
+  
+  == location.hostname + location.pathname + location.search
+
+-----------------------------------------------------------------------
+			// Lesson [14] //
+-----------------------------------------------------------------------
+ location.replace("link");
+ location.assign();
+ location.reload(true or false) true to clear cash in browser
+-----------------------------------------------------------------------
+			// Lesson [15] //
+-----------------------------------------------------------------------history.forward()
+-history.back()
+-history.go(-2 or 2) to go back two page or forward two page
+
+-----------------------------------------------------------------------
+			// Lesson [16] //
+-----------------------------------------------------------------------console.log(navigator.appCodeName);
+console.log(navigator.appName);
+console.log(navigator.appVersion);
+console.log(navigator.platform);
+console.log(navigator.cookieEnabled);
+console.log(navigator.language);
+console.log(navigator.product);
+
+
+-----------------------------------------------------------------------
+			// Lesson [17] //
+-----------------------------------------------------------------------/*
+    screen.width
+    screen.height
+    screen.availHeight
+    screen.availWidth
+    screen.colorDepth || screen.pixelDepth
+*/
+
+console.log(screen.width);
+console.log(screen.height);
+console.log(screen.availHeight);
+console.log(screen.availWidth);
+console.log(screen.pixelDepth);
+
+-----------------------------------------------------------------------
+			// Lesson [18] //
+-----------------------------------------------------------------------
+/*
+    document.cookie = "name=value; expires=Date; path=/"
+*/
+----------------------------------------------------------------------

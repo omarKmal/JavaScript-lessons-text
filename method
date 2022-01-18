@@ -1,0 +1,54 @@
+			// event //
+---------------------------------------------------------------
+1]<button onclick="..."></button>
+2]onchange
+3]onclick
+4]onmouseover
+5]onmouseout
+6]onkeydown
+7]onload
+
+---------------------------------------------------------------
+			Array Method
+---------------------------------------------------------------
+.toString			// convert to string
+.join("..")			// to change the default space
+.pop();			// Removes the last element
+.push("...")			// Adds a new element 
+.shift();			// Remove the first element
+.unshift("...")		// Add a new element
+variable[0] = "..."		// change the 0 index 
+variable[variable.length]=".." // add element to variable
+delete variable[0];		// change the first element to undefined
+.splice(start,delete,add)
+.concat(variable)		// concatenates new array
+.slice(start,end)		// cut from start to end
+.sort()			// sorts the elements
+.reverce()			// reverse the elements
+
+---------------------------------------------------------------
+			String Method
+---------------------------------------------------------------
+			
+1] .length;
+2] .indexOf(the index you search, start) // to get number of index
+3] .lastIndexOf(the index you search, start) // to search from last to start
+4] .serarch(value)		// to search 
+5] .slice(start, end)		// to slice from text
+6] .subtring(start,end)		// 
+7] .substr(start,lenght)
+8] .split(" " , length)		// convert to list
+
+---------------------------------------------------------------
+			Math Method
+---------------------------------------------------------------
+Math.ceil();			// تفريب للرقم الاعلي دائما
+var x = Math.floor(8.9);  	// تقريب الي القيمه الاصعر دائما
+var x = Math.round(2.6);             //   التقريب بالطريقه الصحيحه
+var x = Math.min(200,100,50,20,10,-20,-120,100.200);
+var x = Math.random();
+
+
+
+
+
