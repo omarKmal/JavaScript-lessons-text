@@ -1,2 +1,2 @@
 # JavaScript lessons text
-This files consist from : basic js syntax , dom , bom and ES6 
+This files consist of : basic js syntax , dom , bom and ES6 
